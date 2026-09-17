@@ -1,8 +1,8 @@
 # YuruVerse
 
 Website for [funami.tech](https://funami.tech) — the hub of the YuruVerse: self-hosted
-community services (Matrix chat, Mastodon, Lemmy, a Bluesky PDS, Minecraft and Linux
-mirrors) run from Gyeonggi, South Korea since 2022.
+community services (Matrix chat, Mastodon, Lemmy, Minecraft and Linux mirrors) run
+from Gyeonggi, South Korea since 2022.
 
 Shares its design system with [YuruMirror](https://github.com/funamitech/mirror).
 

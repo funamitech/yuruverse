@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <!-- @include partials/head.html title="YuruVerse — self-hosted services from Gyeonggi, South Korea (Yui says hi!)" description="Matrix chat, Mastodon, Lemmy, a Bluesky PDS, a Minecraft server and Linux mirrors — self-hosted from a home in Gyeonggi, South Korea by one student since 2022. Mascot-in-charge: Yui Funami. She is tired. Enjoy!" image="/assets/img/IMG_0010.webp" -->
+    <!-- @include partials/head.html title="YuruVerse — self-hosted services from Gyeonggi, South Korea (Yui says hi!)" description="Matrix chat, Mastodon (our own glitch-soc fork, YuruYuri Glitch), Lemmy, a Minecraft server and Linux mirrors — self-hosted from a home in Gyeonggi, South Korea by one student since 2022. Mascot-in-charge: Yui Funami. She is tired. Enjoy!" image="/assets/img/IMG_0010.webp" -->
 </head>
 
 <body>
@@ -36,10 +36,10 @@
                     </h1>
                     <p class="mt-5 max-w-xl text-lg/relaxed lg:max-w-lg xl:max-w-xl">
                         Servicing various services since 2022! A laid-back little universe of
-                        self-hosted stuff — Matrix chat, Mastodon, Lemmy, a Bluesky PDS, a
-                        Minecraft server and Linux package mirrors — run from a home in Gyeonggi,
-                        South Korea by one student and one very tired mascot. (That's me in the
-                        background. Hi. Please don't look at the cable management.)
+                        self-hosted stuff — Matrix chat, Mastodon, Lemmy, a Minecraft server and
+                        Linux package mirrors — run from a home in Gyeonggi, South Korea by one
+                        student and one very tired mascot. (That's me in the background. Hi.
+                        Please don't look at the cable management.)
                     </p>
                     <div class="mt-8 flex flex-wrap gap-3">
                         <a href="#services" class="btn-primary">
@@ -57,7 +57,7 @@
                     <dl class="mt-10 flex flex-wrap gap-x-10 gap-y-4">
                         <div>
                             <dt class="text-xs font-medium tracking-wider text-faint uppercase">Services</dt>
-                            <dd class="mt-1 text-2xl font-bold text-ink tabular-nums">6 <span class="text-sm font-medium text-faint">(so far)</span></dd>
+                            <dd class="mt-1 text-2xl font-bold text-ink tabular-nums">5 <span class="text-sm font-medium text-faint">(so far)</span></dd>
                         </div>
                         <div>
                             <dt class="text-xs font-medium tracking-wider text-faint uppercase">Running since</dt>
@@ -79,7 +79,7 @@
         <!-- Services -->
         <section id="services" class="scroll-mt-20 border-t border-line bg-surface/50">
             <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-20">
-                <h2 class="section-title">Services <span class="text-faint font-normal">(six doors, one Yui)</span></h2>
+                <h2 class="section-title">Services <span class="text-faint font-normal">(five doors, one Yui)</span></h2>
                 <p class="mt-2 max-w-2xl">
                     Everything lives under
                     <code class="rounded bg-inset px-1.5 py-0.5 font-mono text-[13px] text-accent-strong">funami.tech</code>.
@@ -91,7 +91,7 @@
                     <a href="https://chat.funami.tech" class="service-card card group flex flex-col p-5">
                         <div class="flex items-center gap-3">
                             <span class="flex size-9 flex-none items-center justify-center rounded-xl bg-accent-soft text-accent-strong">
-                                <svg class="size-5" aria-hidden="true"><use href="#i-message-circle"/></svg>
+                                <svg class="size-5" aria-hidden="true"><use href="#i-matrix"/></svg>
                             </span>
                             <div class="min-w-0">
                                 <h3 class="font-semibold text-ink group-hover:text-accent-strong">YuruChat</h3>
@@ -120,19 +120,19 @@
                             </div>
                         </div>
                         <p class="mt-3 text-sm/relaxed">
-                            A general-purpose Mastodon instance (running our very own funamitech
-                            fork!) — a safe, free-for-all hang-out space without hate or
-                            discrimination. Handles end in
+                            A general-purpose Mastodon instance running our very own glitch-soc
+                            fork, YuruYuri Glitch (Glitch-YRYR if you're in a hurry) — a safe,
+                            free-for-all hang-out space without hate or discrimination. Handles end in
                             <code class="font-mono text-[13px] text-ink">@funami.tech</code>, obviously.
                             Be nice: the admin is a student with a ban button and a deadline.
                         </p>
-                        <p class="chip mt-auto pt-1 self-start">Mastodon (funamitech fork)</p>
+                        <p class="chip mt-auto pt-1 self-start">Mastodon · YuruYuri Glitch</p>
                     </a>
 
                     <a href="https://lemmy.funami.tech" class="service-card card group flex flex-col p-5">
                         <div class="flex items-center gap-3">
                             <span class="flex size-9 flex-none items-center justify-center rounded-xl bg-accent-soft text-accent-strong">
-                                <svg class="size-5" aria-hidden="true"><use href="#i-users"/></svg>
+                                <svg class="size-5" aria-hidden="true"><use href="#i-lemmy"/></svg>
                             </span>
                             <div class="min-w-0">
                                 <h3 class="font-semibold text-ink group-hover:text-accent-strong">YuruLemmy</h3>
@@ -145,28 +145,6 @@
                             She simply remembers.
                         </p>
                         <p class="chip mt-auto pt-1 self-start">Lemmy</p>
-                    </a>
-
-                    <a href="https://bsky.funami.tech" class="service-card card group flex flex-col p-5">
-                        <div class="flex items-center gap-3">
-                            <span class="flex size-9 flex-none items-center justify-center rounded-xl bg-accent-soft text-accent-strong">
-                                <svg class="size-5" aria-hidden="true"><use href="#i-bluesky"/></svg>
-                            </span>
-                            <div class="min-w-0">
-                                <h3 class="font-semibold text-ink group-hover:text-accent-strong">Bluesky PDS</h3>
-                                <p class="truncate font-mono text-xs text-faint">bsky.funami.tech</p>
-                            </div>
-                        </div>
-                        <p class="mt-3 text-sm/relaxed">
-                            Yes, a student runs a Bluesky PDS from her home. Not a company, not a
-                            datacenter — a home, behind a router named after a yuri light novel.
-                            It's our own Personal Data Server on the AT Protocol, and the official
-                            <code class="font-mono text-[13px] text-ink">@funami.tech</code>
-                            account lives right here. Yui checks
-                            <code class="font-mono text-[13px] text-ink">/xrpc/_health</code>
-                            every morning. It returns a version number. She has it framed.
-                        </p>
-                        <p class="chip mt-auto pt-1 self-start">AT Protocol PDS</p>
                     </a>
 
                     <a href="https://mc.funami.tech" class="service-card card group flex flex-col p-5">
@@ -250,8 +228,8 @@
                         </span>
                         <h3 class="mt-4 font-semibold text-ink">Open source</h3>
                         <p class="mt-2 text-sm/relaxed">
-                            Peek behind the curtain: this site, the YuruMirror theme and the
-                            Mastodon fork are all on GitHub under
+                            Peek behind the curtain: this site, the YuruMirror theme and
+                            YuruYuri Glitch (our glitch-soc Mastodon fork) are all on GitHub under
                             <a class="font-medium text-accent-strong hover:underline" href="https://github.com/funamitech">funamitech</a>.
                             The site itself is GPL-3.0, so go ahead and steal the theme (legally!).
                             The code is GPL. Yui is not — she belongs to Namori-sensei and we're
@@ -265,8 +243,8 @@
         <!-- Support -->
         <section id="support" class="scroll-mt-20 border-t border-line bg-surface/50">
             <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-20">
-                <div class="card flex flex-col gap-8 p-8 md:flex-row md:items-center md:justify-between">
-                    <div class="min-w-0 max-w-lg">
+                <div class="card flex flex-col gap-8 p-8 md:flex-row md:items-center md:justify-between md:gap-12">
+                    <div class="min-w-0 max-w-xl">
                         <span class="flex size-12 items-center justify-center rounded-2xl bg-accent-soft text-accent-strong">
                             <svg class="size-6" aria-hidden="true"><use href="#i-heart"/></svg>
                         </span>
@@ -279,18 +257,15 @@
                             Kyōko has asked. Yui has said no.
                         </p>
                     </div>
-                    <div class="flex flex-none flex-col gap-3 sm:flex-row md:flex-col">
-                        <a href="https://github.com/sponsors/NoaHimesaka1873" class="btn-primary whitespace-nowrap">
-                            <svg class="size-4" aria-hidden="true"><use href="#i-github"/></svg>
+                    <div class="flex flex-none flex-col items-stretch gap-4 text-center sm:items-center md:w-[18rem]">
+                        <a href="https://github.com/sponsors/NoaHimesaka1873" class="btn-primary w-full whitespace-nowrap px-6 py-3 text-base">
+                            <svg class="size-5" aria-hidden="true"><use href="#i-github"/></svg>
                             Sponsor on GitHub ♥
                         </a>
-                        <a href="https://mirror.funami.tech/donate.html" class="btn-ghost whitespace-nowrap">
-                            YuruMirror donate page (also us)
-                            <svg class="size-3.5 text-faint" aria-hidden="true"><use href="#i-external-link"/></svg>
-                        </a>
-                        <p class="max-w-[17rem] text-xs/relaxed text-faint md:text-center">
+                        <p class="text-xs/relaxed text-faint">
                             Every sponsor is an honorary club member. There is no clubroom.
-                            There are no meetings. It's mostly uptime.
+                            There are no meetings. It's mostly uptime. (There used to be two
+                            buttons here. They both ended up at this one. Yui consolidated.)
                         </p>
                     </div>
                 </div>
