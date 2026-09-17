@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
-    <!-- @include partials/head.html title="YuruVerse — self-hosted services from Gyeonggi, South Korea" description="Self-hosted community services — Matrix chat, Mastodon, Lemmy, a Bluesky PDS, Minecraft and Linux mirrors — run from Gyeonggi, South Korea since 2022." image="/assets/img/IMG_0010.webp" -->
+    <!-- @include partials/head.html title="YuruVerse — self-hosted services from Gyeonggi, South Korea (Yui says hi!)" description="Matrix chat, Mastodon, Lemmy, a Bluesky PDS, a Minecraft server and Linux mirrors — self-hosted from a home in Gyeonggi, South Korea by one student since 2022. Mascot-in-charge: Yui Funami. She is tired. Enjoy!" image="/assets/img/IMG_0010.webp" -->
 </head>
 
 <body>
+    <!-- Hi, source reader. Yui says: the CSS is Tailwind 4, the font is Inter, the mascot is her, and the cable management is nobody's business. -->
     <!-- @include partials/nav.html -->
 
     <main>
@@ -26,6 +27,8 @@
                         Gyeonggi, South Korea
                         <span class="text-line-strong" aria-hidden="true">·</span>
                         since 2022
+                        <span class="text-line-strong" aria-hidden="true">·</span>
+                        Yui on call
                     </p>
                     <h1 class="mt-5 text-4xl font-bold tracking-tight text-ink sm:text-5xl lg:text-6xl">
                         Welcome to<br>
@@ -34,7 +37,9 @@
                     <p class="mt-5 max-w-xl text-lg/relaxed lg:max-w-lg xl:max-w-xl">
                         Servicing various services since 2022! A laid-back little universe of
                         self-hosted stuff — Matrix chat, Mastodon, Lemmy, a Bluesky PDS, a
-                        Minecraft server and Linux package mirrors — run from Gyeonggi, South Korea.
+                        Minecraft server and Linux package mirrors — run from a home in Gyeonggi,
+                        South Korea by one student and one very tired mascot. (That's me in the
+                        background. Hi. Please don't look at the cable management.)
                     </p>
                     <div class="mt-8 flex flex-wrap gap-3">
                         <a href="#services" class="btn-primary">
@@ -43,9 +48,12 @@
                         </a>
                         <a href="#support" class="btn-ghost">
                             <svg class="size-4 text-accent" aria-hidden="true"><use href="#i-heart"/></svg>
-                            Support YuruVerse
+                            Support YuruVerse (Yui asks nicely)
                         </a>
                     </div>
+                    <p class="mt-3 text-xs text-faint">
+                        Yui says: the Explore button just scrolls down. She could have told you that. She didn't.
+                    </p>
                     <dl class="mt-10 flex flex-wrap gap-x-10 gap-y-4">
                         <div>
                             <dt class="text-xs font-medium tracking-wider text-faint uppercase">Services</dt>
@@ -59,6 +67,10 @@
                             <dt class="text-xs font-medium tracking-wider text-faint uppercase">Home</dt>
                             <dd class="mt-1 text-2xl font-bold text-ink">Gyeonggi</dd>
                         </div>
+                        <div>
+                            <dt class="text-xs font-medium tracking-wider text-faint uppercase">Sysadmins</dt>
+                            <dd class="mt-1 text-2xl font-bold text-ink tabular-nums">1 <span class="text-sm font-medium text-faint">(a student)</span></dd>
+                        </div>
                     </dl>
                 </div>
             </div>
@@ -71,7 +83,8 @@
                 <p class="mt-2 max-w-2xl">
                     Everything lives under
                     <code class="rounded bg-inset px-1.5 py-0.5 font-mono text-[13px] text-accent-strong">funami.tech</code>.
-                    Pick a door. Enjoy!
+                    Pick a door. Enjoy! Yui holds each one open personally — she is not paid
+                    for this, she'd like that noted.
                 </p>
 
                 <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -86,10 +99,11 @@
                             </div>
                         </div>
                         <p class="mt-3 text-sm/relaxed">
-                            Our very own Matrix homeserver, with Element web bolted on so you can
-                            chat straight from a browser. Grab an
+                            Our very own Matrix homeserver (Synapse), with Element web bolted on so
+                            you can chat straight from a browser. Grab an
                             <code class="font-mono text-[13px] text-ink">@you:funami.tech</code>
-                            and come say hi!
+                            and come say hi! Yui's job here is restarting Synapse, not reading
+                            your DMs. She has enough to read.
                         </p>
                         <p class="chip mt-auto pt-1 self-start">Synapse + Element</p>
                     </a>
@@ -109,6 +123,7 @@
                             fork!) — a safe, free-for-all hang-out space without hate or
                             discrimination. Handles end in
                             <code class="font-mono text-[13px] text-ink">@funami.tech</code>, obviously.
+                            Be nice: the admin is a student with a ban button and a deadline.
                         </p>
                         <p class="chip mt-auto pt-1 self-start">Mastodon (funamitech fork)</p>
                     </a>
@@ -125,7 +140,8 @@
                         </div>
                         <p class="mt-3 text-sm/relaxed">
                             Reddit-shaped, fediverse-flavoured. The (self-claimed!) first Lemmy
-                            instance in South Korea — post links, argue nicely.
+                            instance in South Korea — post links, argue nicely. Yui downvotes nothing.
+                            She simply remembers.
                         </p>
                         <p class="chip mt-auto pt-1 self-start">Lemmy</p>
                     </a>
@@ -141,10 +157,13 @@
                             </div>
                         </div>
                         <p class="mt-3 text-sm/relaxed">
-                            Yes, a student runs a Bluesky PDS from her home. It's our own
-                            Personal Data Server on the AT Protocol, and the official
+                            Yes, a student runs a Bluesky PDS from her home. Not a company, not a
+                            datacenter — a home, behind a router named after a yuri light novel.
+                            It's our own Personal Data Server on the AT Protocol, and the official
                             <code class="font-mono text-[13px] text-ink">@funami.tech</code>
-                            account lives right here.
+                            account lives right here. Yui checks
+                            <code class="font-mono text-[13px] text-ink">/xrpc/_health</code>
+                            every morning. It returns a version number. She has it framed.
                         </p>
                         <p class="chip mt-auto pt-1 self-start">AT Protocol PDS</p>
                     </a>
@@ -160,9 +179,10 @@
                             </div>
                         </div>
                         <p class="mt-3 text-sm/relaxed">
-                            Blocks! Creepers! Friends! Our Minecraft server. Addresses, rules and
-                            modpacks live over on the YuruMC page — go build something silly
-                            (or blow it up, we don't judge).
+                            Blocks! Creepers! Friends! Our Minecraft server, with exactly two rules —
+                            even hacked clients are allowed! Addresses, rules and modpacks live over
+                            on the YuruMC page — go build something silly (or blow it up, we don't
+                            judge). Yui judges a little.
                         </p>
                         <p class="chip mt-auto pt-1 self-start">itzg/docker-minecraft-server</p>
                     </a>
@@ -182,8 +202,9 @@
                             Fyra Labs. The one YuruVerse thing NOT running from our home:
                             4 Gbps from Oracle Cloud in Seoul, so
                             <code class="font-mono text-[13px] text-ink">pacman -Syu</code> goes brrr.
+                            Yui only visits on weekends; the cloud has its own staff.
                         </p>
-                        <p class="chip mt-auto pt-1 self-start">nginx · Oracle Cloud</p>
+                        <p class="chip mt-auto pt-1 self-start">nginx · Oracle Cloud · not our closet</p>
                     </a>
                 </div>
             </div>
@@ -192,7 +213,7 @@
         <!-- About -->
         <section class="border-t border-line">
             <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-20">
-                <h2 class="section-title">What is YuruVerse?</h2>
+                <h2 class="section-title">What is YuruVerse? (Yui explains)</h2>
                 <div class="mt-8 grid gap-4 md:grid-cols-3">
                     <div class="card p-6">
                         <span class="flex size-10 items-center justify-center rounded-xl bg-accent-soft text-accent-strong">
@@ -203,6 +224,7 @@
                             Your Matrix ID is <code class="font-mono text-[13px] text-ink">@you:funami.tech</code>
                             and your Mastodon handle is <code class="font-mono text-[13px] text-ink">@you@funami.tech</code>
                             — the same domain as this very page. One universe, one name. Neat, right?
+                            Yui approved the naming scheme. Yui approves most things after 2 a.m.
                         </p>
                     </div>
                     <div class="card p-6">
@@ -214,7 +236,8 @@
                             YuruVerse lives on a home server in Gyeonggi, South Korea — a VM named
                             after the YuruYuri student council (Nanamori-Chu☆Seitokai, naturally),
                             not a datacenter. Close to you if you're anywhere in East Asia! Only
-                            YuruMirror gets the fancy Oracle Cloud seat in Seoul.
+                            YuruMirror gets the fancy Oracle Cloud seat in Seoul. Yes, the servers
+                            are named after YuruYuri. No, Yui didn't get a vote. Yes, she's in the show.
                         </p>
                     </div>
                     <div class="card p-6">
@@ -227,6 +250,8 @@
                             Mastodon fork are all on GitHub under
                             <a class="font-medium text-accent-strong hover:underline" href="https://github.com/funamitech">funamitech</a>.
                             The site itself is GPL-3.0, so go ahead and steal the theme (legally!).
+                            The code is GPL. Yui is not — she belongs to Namori-sensei and we're
+                            just borrowing her.
                         </p>
                     </div>
                 </div>
@@ -241,21 +266,27 @@
                         <span class="flex size-12 items-center justify-center rounded-2xl bg-accent-soft text-accent-strong">
                             <svg class="size-6" aria-hidden="true"><use href="#i-heart"/></svg>
                         </span>
-                        <h2 class="section-title mt-5">Keep the lights on</h2>
+                        <h2 class="section-title mt-5">Keep the lights (and Yui) on</h2>
                         <p class="mt-2 text-sm/relaxed">
                             We're short of money and we need YOUR HELP! Donations keep us up
-                            and running — and might let us expand our services.
+                            and running — and might let us expand our services. Every won goes to
+                            electricity, disks and the occasional dead fan. None of it goes to Yui's
+                            rum raisin ice cream. She has asked.
                         </p>
                     </div>
                     <div class="flex flex-none flex-col gap-3 sm:flex-row md:flex-col">
                         <a href="https://github.com/sponsors/NoaHimesaka1873" class="btn-primary whitespace-nowrap">
                             <svg class="size-4" aria-hidden="true"><use href="#i-github"/></svg>
-                            Sponsor on GitHub
+                            Sponsor on GitHub ♥
                         </a>
                         <a href="https://mirror.funami.tech/donate.html" class="btn-ghost whitespace-nowrap">
-                            YuruMirror donate page
+                            YuruMirror donate page (also us)
                             <svg class="size-3.5 text-faint" aria-hidden="true"><use href="#i-external-link"/></svg>
                         </a>
+                        <p class="max-w-[17rem] text-xs/relaxed text-faint md:text-center">
+                            Every sponsor is an honorary club member. There is no clubroom.
+                            There are no meetings. It's mostly uptime.
+                        </p>
                     </div>
                 </div>
             </div>
