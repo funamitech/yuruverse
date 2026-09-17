@@ -99,14 +99,14 @@
                     <p class="chip">
                         <svg class="size-3.5" aria-hidden="true"><use href="#i-map-pin"/></svg>
                         Gyeonggi, South Korea
-                        <span class="text-line-strong">·</span>
+                        <span class="text-line-strong" aria-hidden="true">·</span>
                         since 2022
                     </p>
                     <h1 class="mt-5 text-4xl font-bold tracking-tight text-ink sm:text-5xl lg:text-6xl">
                         Welcome to<br>
                         <span class="text-accent-strong">YuruVerse</span>!
                     </h1>
-                    <p class="mt-5 max-w-xl text-lg/relaxed">
+                    <p class="mt-5 max-w-xl text-lg/relaxed lg:max-w-lg xl:max-w-xl">
                         Servicing various services since 2022! A laid-back little universe of
                         self-hosted stuff — Matrix chat, Mastodon, Lemmy, a Bluesky PDS, a
                         Minecraft server and Linux package mirrors — run from Gyeonggi, South Korea.
@@ -161,8 +161,10 @@
                             </div>
                         </div>
                         <p class="mt-3 text-sm/relaxed">
-                            Matrix homeserver with the Element web client. Accounts live at
-                            <code class="font-mono text-[13px] text-ink">@you:funami.tech</code>.
+                            Our very own Matrix homeserver, with Element web bolted on so you can
+                            chat straight from a browser. Grab an
+                            <code class="font-mono text-[13px] text-ink">@you:funami.tech</code>
+                            and come say hi!
                         </p>
                         <p class="chip mt-auto pt-1 self-start">Synapse + Element</p>
                     </a>
@@ -178,9 +180,10 @@
                             </div>
                         </div>
                         <p class="mt-3 text-sm/relaxed">
-                            General-purpose Mastodon instance — a safe, free-for-all hang-out
-                            space without hate or discrimination. Handles end in
-                            <code class="font-mono text-[13px] text-ink">@funami.tech</code>.
+                            A general-purpose Mastodon instance (running our very own funamitech
+                            fork!) — a safe, free-for-all hang-out space without hate or
+                            discrimination. Handles end in
+                            <code class="font-mono text-[13px] text-ink">@funami.tech</code>, obviously.
                         </p>
                         <p class="chip mt-auto pt-1 self-start">Mastodon (funamitech fork)</p>
                     </a>
@@ -196,8 +199,8 @@
                             </div>
                         </div>
                         <p class="mt-3 text-sm/relaxed">
-                            Link aggregator and forum on the fediverse — the self-claimed first
-                            Lemmy instance in South Korea.
+                            Reddit-shaped, fediverse-flavoured. The (self-claimed!) first Lemmy
+                            instance in South Korea — post links, argue nicely.
                         </p>
                         <p class="chip mt-auto pt-1 self-start">Lemmy</p>
                     </a>
@@ -213,8 +216,10 @@
                             </div>
                         </div>
                         <p class="mt-3 text-sm/relaxed">
-                            YuruVerse's own Personal Data Server on the AT Protocol — the
-                            home of the official <code class="font-mono text-[13px] text-ink">@funami.tech</code> Bluesky account.
+                            Yes, a student runs a Bluesky PDS from her home. It's our own
+                            Personal Data Server on the AT Protocol, and the official
+                            <code class="font-mono text-[13px] text-ink">@funami.tech</code>
+                            account lives right here.
                         </p>
                         <p class="chip mt-auto pt-1 self-start">AT Protocol PDS</p>
                     </a>
@@ -230,8 +235,9 @@
                             </div>
                         </div>
                         <p class="mt-3 text-sm/relaxed">
-                            The YuruVerse Minecraft server. Addresses, rules and modpacks are on
-                            the YuruMC page.
+                            Blocks! Creepers! Friends! Our Minecraft server. Addresses, rules and
+                            modpacks live over on the YuruMC page — go build something silly
+                            (or blow it up, we don't judge).
                         </p>
                         <p class="chip mt-auto pt-1 self-start">itzg/docker-minecraft-server</p>
                     </a>
@@ -248,7 +254,9 @@
                         </div>
                         <p class="mt-3 text-sm/relaxed">
                             Package mirrors for Arch Linux, Artix, CachyOS, EndeavourOS and
-                            Fyra Labs — 4 Gbps from Oracle Cloud in Seoul.
+                            Fyra Labs. The one YuruVerse thing NOT running from our home:
+                            4 Gbps from Oracle Cloud in Seoul, so
+                            <code class="font-mono text-[13px] text-ink">pacman -Syu</code> goes brrr.
                         </p>
                         <p class="chip mt-auto pt-1 self-start">nginx · Oracle Cloud</p>
                     </a>
@@ -269,7 +277,7 @@
                         <p class="mt-2 text-sm/relaxed">
                             Your Matrix ID is <code class="font-mono text-[13px] text-ink">@you:funami.tech</code>
                             and your Mastodon handle is <code class="font-mono text-[13px] text-ink">@you@funami.tech</code>
-                            — the same domain as this page.
+                            — the same domain as this very page. One universe, one name. Neat, right?
                         </p>
                     </div>
                     <div class="card p-6">
@@ -278,9 +286,10 @@
                         </span>
                         <h3 class="mt-4 font-semibold text-ink">Hosted in Gyeonggi, South Korea</h3>
                         <p class="mt-2 text-sm/relaxed">
-                            YuruVerse runs on a home server in Gyeonggi, South Korea — close
-                            to you if you are anywhere in East Asia. Only YuruMirror lives in
-                            Oracle Cloud's Seoul region.
+                            YuruVerse lives on a home server in Gyeonggi, South Korea — a VM named
+                            after the YuruYuri student council (Nanamori-Chu☆Seitokai, naturally),
+                            not a datacenter. Close to you if you're anywhere in East Asia! Only
+                            YuruMirror gets the fancy Oracle Cloud seat in Seoul.
                         </p>
                     </div>
                     <div class="card p-6">
@@ -289,9 +298,10 @@
                         </span>
                         <h3 class="mt-4 font-semibold text-ink">Open source</h3>
                         <p class="mt-2 text-sm/relaxed">
-                            This site, the YuruMirror theme and the Mastodon fork live on GitHub
-                            under the <a class="font-medium text-accent-strong hover:underline" href="https://github.com/funamitech">funamitech</a>
-                            organization. The site itself is GPL-3.0.
+                            Peek behind the curtain: this site, the YuruMirror theme and the
+                            Mastodon fork are all on GitHub under
+                            <a class="font-medium text-accent-strong hover:underline" href="https://github.com/funamitech">funamitech</a>.
+                            The site itself is GPL-3.0, so go ahead and steal the theme (legally!).
                         </p>
                     </div>
                 </div>
@@ -379,7 +389,7 @@
         </div>
 
         <div class="mt-10 flex flex-col gap-2 border-t border-line pt-6 text-xs text-faint sm:flex-row sm:items-center sm:justify-between">
-            <p>© 2022–2026 <a class="footer-link" href="https://funami.tech">funami.tech YuruVerse</a>. Some Rights Reserved.</p>
+            <p>© 2022–2026 <a class="footer-link" href="https://funami.tech">funami.tech YuruVerse</a>. Some Rights Reserved. Not a datacenter — just a home in Gyeonggi.</p>
             <p>Sister sites: <a class="footer-link" href="https://mirror.funami.tech">YuruMirror</a> · <a class="footer-link" href="https://mc.funami.tech">YuruMC</a></p>
         </div>
     </div>

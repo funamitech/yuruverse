@@ -226,6 +226,14 @@
   .glow {
     @apply pointer-events-none absolute rounded-full blur-3xl;
   }
+
+  @media (prefers-reduced-motion: reduce) {
+    .service-card,
+    .dropdown-panel:not([hidden]) {
+      transition: none;
+      animation: none;
+    }
+  }
 }
 
 @keyframes menu-in {
