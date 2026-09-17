@@ -9,7 +9,7 @@ Shares its design system with [YuruMirror](https://github.com/funamitech/mirror)
 ## Tech stack
 
 - Tailwind CSS 4 (CSS-first config in `src/assets/css/input.css` — no `tailwind.config.js`)
-- A ~90-line template builder (`build.js`) that expands shared partials into static pages
+- A tiny template builder (`build.js`, 73 lines) that expands shared partials into static pages
 - Vanilla JS, self-hosted Inter variable font, inline SVG icon sprite — **no CDNs, no frameworks**
 - Served by plain nginx (the vhost also proxies `/_matrix` and `/.well-known/*` for YuruChat;
   this repo only owns `/`)
