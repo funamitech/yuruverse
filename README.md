@@ -53,7 +53,7 @@ npm run build        # expand templates + minified CSS
 ```
 
 Deploy the `src/` directory as the webroot. nginx expects the error pages at exactly
-`/error/403.html`, `/error/404.html` and `/error/50x.html`:
+`/error/403.html`, `/error/404.html` and `/error/50x.html`, wired up with something like:
 
 ```nginx
 error_page 403 /error/403.html;
