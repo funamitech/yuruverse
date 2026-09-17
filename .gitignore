@@ -1,0 +1,27 @@
+# Dependencies (package-lock.json IS committed for reproducible installs)
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# Environment
+.env
+.env.*
+
+# Editor / OS junk
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Claude Code machine-local state (launch.json is committed)
+.claude/settings.local.json
+
+# Scratch
+tmp/
+temp/
+*.tmp

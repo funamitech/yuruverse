@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- @include partials/head.html title="YuruVerse — self-hosted services from Seoul" description="Self-hosted community services — Matrix chat, Mastodon, Lemmy, a Bluesky PDS, Minecraft and Linux mirrors — run from Seoul, South Korea since 2022." image="/assets/img/IMG_0010.webp" -->
+</head>
+
+<body>
+    <!-- @include partials/nav.html -->
+
+    <main>
+        <!-- Hero: Yui is the backdrop of the whole section, fading into the canvas -->
+        <section class="relative overflow-hidden">
+            <div class="absolute inset-y-0 right-0 w-[88%] [mask-image:linear-gradient(to_right,transparent,black_55%)] sm:w-[72%] lg:w-[62%] lg:[mask-image:linear-gradient(to_right,transparent,black_40%)]" aria-hidden="true">
+                <img src="/assets/img/IMG_0010.webp" alt="" fetchpriority="high"
+                     class="size-full object-cover object-[50%_30%]">
+                <div class="absolute inset-0 bg-canvas/55 sm:bg-canvas/25 lg:bg-canvas/10"></div>
+            </div>
+            <div class="glow -top-32 -left-24 size-[28rem] bg-plum-400/20" aria-hidden="true"></div>
+            <div class="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-canvas to-transparent" aria-hidden="true"></div>
+
+            <div class="relative mx-auto flex max-w-6xl items-center px-4 py-16 sm:px-6 lg:min-h-[37rem] lg:py-24">
+                <div class="max-w-2xl">
+                    <p class="chip">
+                        <svg class="size-3.5" aria-hidden="true"><use href="#i-map-pin"/></svg>
+                        Seoul, South Korea
+                        <span class="text-line-strong">·</span>
+                        since 2022
+                    </p>
+                    <h1 class="mt-5 text-4xl font-bold tracking-tight text-ink sm:text-5xl lg:text-6xl">
+                        Welcome to the
+                        <span class="text-accent-strong">YuruVerse</span>.
+                    </h1>
+                    <p class="mt-5 max-w-xl text-lg/relaxed">
+                        A laid-back little universe of self-hosted services — Matrix chat,
+                        Mastodon, Lemmy, a Bluesky PDS, a Minecraft server and Linux package
+                        mirrors — run from Seoul, South Korea since 2022.
+                    </p>
+                    <div class="mt-8 flex flex-wrap gap-3">
+                        <a href="#services" class="btn-primary">
+                            Explore the services
+                            <svg class="size-4" aria-hidden="true"><use href="#i-chevron-down"/></svg>
+                        </a>
+                        <a href="#support" class="btn-ghost">
+                            <svg class="size-4 text-accent" aria-hidden="true"><use href="#i-heart"/></svg>
+                            Support YuruVerse
+                        </a>
+                    </div>
+                    <dl class="mt-10 flex flex-wrap gap-x-10 gap-y-4">
+                        <div>
+                            <dt class="text-xs font-medium tracking-wider text-faint uppercase">Services</dt>
+                            <dd class="mt-1 text-2xl font-bold text-ink tabular-nums">6</dd>
+                        </div>
+                        <div>
+                            <dt class="text-xs font-medium tracking-wider text-faint uppercase">Running since</dt>
+                            <dd class="mt-1 text-2xl font-bold text-ink tabular-nums">2022</dd>
+                        </div>
+                        <div>
+                            <dt class="text-xs font-medium tracking-wider text-faint uppercase">Home</dt>
+                            <dd class="mt-1 text-2xl font-bold text-ink">Seoul</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section id="services" class="scroll-mt-20 border-t border-line bg-surface/50">
+            <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-20">
+                <h2 class="section-title">Services</h2>
+                <p class="mt-2 max-w-2xl">
+                    Everything lives under
+                    <code class="rounded bg-inset px-1.5 py-0.5 font-mono text-[13px] text-accent-strong">funami.tech</code>.
+                    Pick a door.
+                </p>
+
+                <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                    <a href="https://chat.funami.tech" class="service-card card group flex flex-col p-5">
+                        <div class="flex items-center gap-3">
+                            <span class="flex size-9 flex-none items-center justify-center rounded-xl bg-accent-soft text-accent-strong">
+                                <svg class="size-5" aria-hidden="true"><use href="#i-message-circle"/></svg>
+                            </span>
+                            <div class="min-w-0">
+                                <h3 class="font-semibold text-ink group-hover:text-accent-strong">YuruChat</h3>
+                                <p class="truncate font-mono text-xs text-faint">chat.funami.tech</p>
+                            </div>
+                        </div>
+                        <p class="mt-3 text-sm/relaxed">
+                            Matrix homeserver with the Element web client. Accounts live at
+                            <code class="font-mono text-[13px] text-ink">@you:funami.tech</code>.
+                        </p>
+                        <p class="chip mt-auto pt-1 self-start">Synapse + Element</p>
+                    </a>
+
+                    <a href="https://toot.funami.tech" class="service-card card group flex flex-col p-5">
+                        <div class="flex items-center gap-3">
+                            <span class="flex size-9 flex-none items-center justify-center rounded-xl bg-accent-soft text-accent-strong">
+                                <svg class="size-5" aria-hidden="true"><use href="#i-mastodon"/></svg>
+                            </span>
+                            <div class="min-w-0">
+                                <h3 class="font-semibold text-ink group-hover:text-accent-strong">YuruToot</h3>
+                                <p class="truncate font-mono text-xs text-faint">toot.funami.tech</p>
+                            </div>
+                        </div>
+                        <p class="mt-3 text-sm/relaxed">
+                            General-purpose Mastodon instance — a safe, free-for-all hang-out
+                            space without hate or discrimination. Handles end in
+                            <code class="font-mono text-[13px] text-ink">@funami.tech</code>.
+                        </p>
+                        <p class="chip mt-auto pt-1 self-start">Mastodon (funamitech fork)</p>
+                    </a>
+
+                    <a href="https://lemmy.funami.tech" class="service-card card group flex flex-col p-5">
+                        <div class="flex items-center gap-3">
+                            <span class="flex size-9 flex-none items-center justify-center rounded-xl bg-accent-soft text-accent-strong">
+                                <svg class="size-5" aria-hidden="true"><use href="#i-users"/></svg>
+                            </span>
+                            <div class="min-w-0">
+                                <h3 class="font-semibold text-ink group-hover:text-accent-strong">YuruLemmy</h3>
+                                <p class="truncate font-mono text-xs text-faint">lemmy.funami.tech</p>
+                            </div>
+                        </div>
+                        <p class="mt-3 text-sm/relaxed">
+                            Link aggregator and forum on the fediverse — the self-claimed first
+                            Lemmy instance in South Korea.
+                        </p>
+                        <p class="chip mt-auto pt-1 self-start">Lemmy</p>
+                    </a>
+
+                    <a href="https://bsky.funami.tech" class="service-card card group flex flex-col p-5">
+                        <div class="flex items-center gap-3">
+                            <span class="flex size-9 flex-none items-center justify-center rounded-xl bg-accent-soft text-accent-strong">
+                                <svg class="size-5" aria-hidden="true"><use href="#i-bluesky"/></svg>
+                            </span>
+                            <div class="min-w-0">
+                                <h3 class="font-semibold text-ink group-hover:text-accent-strong">Bluesky PDS</h3>
+                                <p class="truncate font-mono text-xs text-faint">bsky.funami.tech</p>
+                            </div>
+                        </div>
+                        <p class="mt-3 text-sm/relaxed">
+                            YuruVerse's own Personal Data Server on the AT Protocol — the
+                            home of the official <code class="font-mono text-[13px] text-ink">@funami.tech</code> Bluesky account.
+                        </p>
+                        <p class="chip mt-auto pt-1 self-start">AT Protocol PDS</p>
+                    </a>
+
+                    <a href="https://mc.funami.tech" class="service-card card group flex flex-col p-5">
+                        <div class="flex items-center gap-3">
+                            <span class="flex size-9 flex-none items-center justify-center rounded-xl bg-accent-soft text-accent-strong">
+                                <svg class="size-5" aria-hidden="true"><use href="#i-box"/></svg>
+                            </span>
+                            <div class="min-w-0">
+                                <h3 class="font-semibold text-ink group-hover:text-accent-strong">YuruMC</h3>
+                                <p class="truncate font-mono text-xs text-faint">mc.funami.tech</p>
+                            </div>
+                        </div>
+                        <p class="mt-3 text-sm/relaxed">
+                            The YuruVerse Minecraft server. Addresses, rules and modpacks are on
+                            the YuruMC page.
+                        </p>
+                        <p class="chip mt-auto pt-1 self-start">itzg/docker-minecraft-server</p>
+                    </a>
+
+                    <a href="https://mirror.funami.tech" class="service-card card group flex flex-col p-5">
+                        <div class="flex items-center gap-3">
+                            <span class="flex size-9 flex-none items-center justify-center rounded-xl bg-accent-soft text-accent-strong">
+                                <svg class="size-5" aria-hidden="true"><use href="#i-hard-drive"/></svg>
+                            </span>
+                            <div class="min-w-0">
+                                <h3 class="font-semibold text-ink group-hover:text-accent-strong">YuruMirror</h3>
+                                <p class="truncate font-mono text-xs text-faint">mirror.funami.tech</p>
+                            </div>
+                        </div>
+                        <p class="mt-3 text-sm/relaxed">
+                            Package mirrors for Arch Linux, Artix, CachyOS, EndeavourOS and
+                            Fyra Labs — 4 Gbps from Oracle Cloud in Seoul.
+                        </p>
+                        <p class="chip mt-auto pt-1 self-start">nginx · Oracle Cloud</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="border-t border-line">
+            <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-20">
+                <h2 class="section-title">What is YuruVerse?</h2>
+                <div class="mt-8 grid gap-4 md:grid-cols-3">
+                    <div class="card p-6">
+                        <span class="flex size-10 items-center justify-center rounded-xl bg-accent-soft text-accent-strong">
+                            <svg class="size-5" aria-hidden="true"><use href="#i-at-sign"/></svg>
+                        </span>
+                        <h3 class="mt-4 font-semibold text-ink">One name for everything</h3>
+                        <p class="mt-2 text-sm/relaxed">
+                            Your Matrix ID is <code class="font-mono text-[13px] text-ink">@you:funami.tech</code>
+                            and your Mastodon handle is <code class="font-mono text-[13px] text-ink">@you@funami.tech</code>
+                            — the same domain as this page.
+                        </p>
+                    </div>
+                    <div class="card p-6">
+                        <span class="flex size-10 items-center justify-center rounded-xl bg-accent-soft text-accent-strong">
+                            <svg class="size-5" aria-hidden="true"><use href="#i-map-pin"/></svg>
+                        </span>
+                        <h3 class="mt-4 font-semibold text-ink">Hosted in Seoul, South Korea</h3>
+                        <p class="mt-2 text-sm/relaxed">
+                            Every YuruVerse service is hosted in Seoul — close to you if you
+                            are anywhere in East Asia. The mirror runs in Oracle Cloud's
+                            Seoul region.
+                        </p>
+                    </div>
+                    <div class="card p-6">
+                        <span class="flex size-10 items-center justify-center rounded-xl bg-accent-soft text-accent-strong">
+                            <svg class="size-5" aria-hidden="true"><use href="#i-code"/></svg>
+                        </span>
+                        <h3 class="mt-4 font-semibold text-ink">Open source</h3>
+                        <p class="mt-2 text-sm/relaxed">
+                            This site, the YuruMirror theme and the Mastodon fork live on GitHub
+                            under the <a class="font-medium text-accent-strong hover:underline" href="https://github.com/funamitech">funamitech</a>
+                            organization. The site itself is GPL-3.0.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Support -->
+        <section id="support" class="scroll-mt-20 border-t border-line bg-surface/50">
+            <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-20">
+                <div class="card flex flex-col gap-8 p-8 md:flex-row md:items-center md:justify-between">
+                    <div class="min-w-0 max-w-lg">
+                        <span class="flex size-12 items-center justify-center rounded-2xl bg-accent-soft text-accent-strong">
+                            <svg class="size-6" aria-hidden="true"><use href="#i-heart"/></svg>
+                        </span>
+                        <h2 class="section-title mt-5">Keep the lights on</h2>
+                        <p class="mt-2 text-sm/relaxed">
+                            YuruVerse is run by one student and paid for out of pocket.
+                            Donations keep the services up and running — and might let them grow.
+                        </p>
+                    </div>
+                    <div class="flex flex-none flex-col gap-3 sm:flex-row md:flex-col">
+                        <a href="https://github.com/sponsors/NoaHimesaka1873" class="btn-primary whitespace-nowrap">
+                            <svg class="size-4" aria-hidden="true"><use href="#i-github"/></svg>
+                            Sponsor on GitHub
+                        </a>
+                        <a href="https://mirror.funami.tech/donate.html" class="btn-ghost whitespace-nowrap">
+                            Where the money goes
+                            <svg class="size-3.5 text-faint" aria-hidden="true"><use href="#i-external-link"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- @include partials/footer.html -->
+</body>
+
+</html>

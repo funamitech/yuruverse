@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "yuruverse-dev",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["dev/server.js"],
+      "port": 8080
+    }
+  ]
+}

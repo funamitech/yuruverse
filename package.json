@@ -1,0 +1,59 @@
+{
+  "name": "yuruverse",
+  "version": "2.0.0",
+  "description": "funami.tech — the YuruVerse hub site",
+  "type": "module",
+  "scripts": {
+    "dev": "node dev/server.js",
+    "build": "node build.js && npm run build-css-prod",
+    "lint": "eslint src/assets/js/*.js build.js dev/server.js",
+    "lint:fix": "npm run lint -- --fix",
+    "build-css": "tailwindcss -i src/assets/css/input.css -o src/assets/css/tailwind.css --watch",
+    "build-css-prod": "tailwindcss -i src/assets/css/input.css -o src/assets/css/tailwind.css --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.0",
+    "tailwindcss": "^4.1.0",
+    "eslint": "^8.57.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es2022": true
+    },
+    "extends": "eslint:recommended",
+    "overrides": [
+      {
+        "files": ["build.js", "dev/**/*.js"],
+        "env": {
+          "node": true,
+          "browser": false
+        },
+        "parserOptions": {
+          "sourceType": "module"
+        }
+      }
+    ],
+    "rules": {
+      "indent": [
+        "error",
+        2
+      ],
+      "quotes": [
+        "error",
+        "single"
+      ],
+      "semi": [
+        "error",
+        "always"
+      ],
+      "no-unused-vars": [
+        "warn",
+        {
+          "args": "none"
+        }
+      ],
+      "no-console": "off"
+    }
+  }
+}

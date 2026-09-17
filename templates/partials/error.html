@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- @include partials/head.html title="{{code}} {{title}} — YuruVerse" description="Self-hosted community services — Matrix chat, Mastodon, Lemmy, a Bluesky PDS, Minecraft and Linux mirrors — run from Seoul, South Korea since 2022." image="{{image}}" -->
+    <meta name="robots" content="noindex">
+</head>
+
+<body>
+    <!-- @include partials/nav.html -->
+
+    <main class="relative flex grow items-center justify-center overflow-hidden px-4 py-16 sm:px-6">
+        <div class="glow top-10 left-1/2 size-[26rem] -translate-x-1/2 {{glow}}" aria-hidden="true"></div>
+
+        <div class="card relative w-full max-w-lg p-8 text-center sm:p-10">
+            <p class="font-mono text-6xl font-bold tracking-tight {{tint}}">{{code}}</p>
+            <h1 class="mt-2 text-2xl font-bold text-ink">{{title}}</h1>
+            <img src="{{image}}" alt="{{imagealt}}"
+                 class="mx-auto mt-6 max-h-64 w-auto rounded-2xl border border-line">
+            <p class="mt-6 text-sm/relaxed">{{message}}</p>
+            <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+                <a href="/" class="btn-primary">
+                    <svg class="size-4" aria-hidden="true"><use href="#i-house"/></svg>
+                    Go home
+                </a>
+                <a href="/#services" class="btn-ghost">
+                    <svg class="size-4" aria-hidden="true"><use href="#i-globe"/></svg>
+                    See the services
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- @include partials/footer.html -->
+</body>
+
+</html>
