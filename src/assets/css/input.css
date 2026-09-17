@@ -198,11 +198,11 @@
   }
 
   .chip {
-    @apply inline-flex items-center gap-1.5 rounded-full bg-inset px-2.5 py-1 text-xs font-medium text-faint;
+    @apply inline-flex max-w-full flex-wrap items-center gap-1.5 rounded-full bg-inset px-2.5 py-1 text-xs font-medium text-faint;
   }
 
   .chip-accent {
-    @apply inline-flex items-center gap-1.5 rounded-full bg-accent-soft px-2.5 py-1 text-xs font-medium text-accent-strong;
+    @apply inline-flex max-w-full flex-wrap items-center gap-1.5 rounded-full bg-accent-soft px-2.5 py-1 text-xs font-medium text-accent-strong;
   }
 
   .card {
