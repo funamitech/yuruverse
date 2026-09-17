@@ -14,5 +14,5 @@
 <link rel="apple-touch-icon" href="/assets/img/yuifunami-300px.png">
 <link rel="preload" href="/assets/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/tailwind.css">
-<script>try { var q = new URLSearchParams(location.search).get('theme'); var t = (q === 'dark' || q === 'light') ? q : localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) { /* no-op */ }</script>
+<script>try { var q = new URLSearchParams(location.search).get('theme'); if (q === 'dark' || q === 'light') { document.documentElement.dataset.theme = q; } else if (!document.documentElement.dataset.theme) { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } } catch (e) { /* no-op */ }</script>
 <script src="/assets/js/site.js" defer></script>
