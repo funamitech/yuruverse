@@ -44,7 +44,7 @@ function expand(source, params = {}, depth = 0) {
 /** Expand a single template file (path relative to templates/). */
 export function expandFile(relPath) {
   const source = readFileSync(join(TEMPLATES, relPath), 'utf8');
-  const banner = `<!-- GENERATED from templates/${relPath} — edit there, then run \`npm run build\` -->\n`;
+  const banner = `<!-- GENERATED from templates/${relPath}. Edit there, then run \`npm run build\` -->\n`;
   return banner + expand(source);
 }
 
