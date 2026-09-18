@@ -1,0 +1,192 @@
+/* YuruVerse theme for authentik (id.funami.tech)
+ * Mirrors the design system used by funami.tech, mc.funami.tech, internal.noa.codes,
+ * noa.codes and mirror.funami.tech: same plum palette, same Inter typeface, same radii.
+ * Written against authentik 2026.8 semantic --ak-* variables, with PatternFly fallbacks
+ * for the parts of the flow executor that still read --pf-* directly.
+ */
+
+@font-face {
+    font-family: "InterVariable";
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("https://funami.tech/assets/fonts/InterVariable.woff2") format("woff2");
+}
+
+:root {
+    /* palette, light */
+    --yuru-canvas: #faf8f9;
+    --yuru-surface: #ffffff;
+    --yuru-inset: #f3eff2;
+    --yuru-line: #eae3e8;
+    --yuru-line-strong: #d5cad2;
+    --yuru-ink: #211b21;
+    --yuru-fg: #4e4552;
+    --yuru-faint: #6d6375;
+    --yuru-accent: #7f6f79;
+    --yuru-accent-strong: #61525c;
+    --yuru-accent-soft: #f0e9ef;
+    --yuru-accent-fill: #6b5b65;
+    --yuru-accent-fill-hover: #574a52;
+    --yuru-on-accent: #ffffff;
+
+    /* authentik semantic variables */
+    --ak-color-accent: var(--yuru-accent);
+    --ak-color-primary: var(--yuru-accent-fill);
+    --ak-color-text: var(--yuru-ink);
+    --ak-color-text-muted: var(--yuru-faint);
+    --ak-color-link: var(--yuru-accent-strong);
+    --ak-color-surface: var(--yuru-surface);
+    --ak-color-surface-muted: var(--yuru-canvas);
+    --ak-color-border: var(--yuru-line);
+
+    --ak-radius-sm: 0.75rem;
+    --ak-shadow-md: 0 10px 30px -12px rgb(41 33 39 / 0.25);
+    --ak-shadow-lg: 0 24px 60px -20px rgb(41 33 39 / 0.35);
+
+    /* PatternFly bridges still read by the flow executor */
+    --pf-global--FontFamily--sans-serif: "InterVariable", "Inter", ui-sans-serif, system-ui, sans-serif;
+    --pf-global--FontFamily--redhat-updated--sans-serif: "InterVariable", "Inter", ui-sans-serif, system-ui, sans-serif;
+    --pf-global--primary-color--100: var(--yuru-accent-fill);
+    --pf-global--primary-color--200: var(--yuru-accent-strong);
+    --pf-global--link--Color: var(--yuru-accent-strong);
+    --pf-global--link--Color--hover: var(--yuru-accent-fill-hover);
+    --pf-global--BorderRadius--sm: 0.75rem;
+    --pf-global--BorderRadius--lg: 1rem;
+    --pf-global--Color--100: var(--yuru-ink);
+    --pf-global--Color--200: var(--yuru-faint);
+    --pf-global--BackgroundColor--100: var(--yuru-surface);
+    --pf-global--BorderColor--100: var(--yuru-line);
+}
+
+html[data-theme="dark"],
+:root[data-theme="dark"] {
+    --yuru-canvas: #17131a;
+    --yuru-surface: #1e1922;
+    --yuru-inset: #29222e;
+    --yuru-line: #342c3b;
+    --yuru-line-strong: #4a4053;
+    --yuru-ink: #f1ecf3;
+    --yuru-fg: #c7bccd;
+    --yuru-faint: #978da1;
+    --yuru-accent: #b9a4b4;
+    --yuru-accent-strong: #d3bfcd;
+    --yuru-accent-soft: #2e2634;
+    --yuru-accent-fill: #c3aabb;
+    --yuru-accent-fill-hover: #d3bdcc;
+    --yuru-on-accent: #251d29;
+}
+
+/* Typography everywhere, including inside shadow roots that inherit from the host */
+:host,
+body,
+.pf-c-login,
+.pf-c-form-control,
+.pf-c-button {
+    font-family: "InterVariable", "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* The flow card: her sites use a soft card on a tinted canvas, not a hard white box */
+.pf-c-login__main,
+ak-flow-executor::part(card),
+.pf-c-card {
+    background-color: var(--yuru-surface);
+    border: 1px solid var(--yuru-line);
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px -12px rgb(41 33 39 / 0.25);
+}
+
+.pf-c-login__main-header h1,
+.pf-c-title {
+    color: var(--yuru-ink);
+    letter-spacing: -0.01em;
+}
+
+.pf-c-login__main-header-desc,
+.pf-c-form__helper-text,
+.pf-c-login__main-footer-band {
+    color: var(--yuru-faint);
+}
+
+/* Inputs: match the rounded, low-contrast fields used across the family */
+.pf-c-form-control {
+    background-color: var(--yuru-inset);
+    color: var(--yuru-ink);
+    border: 1px solid var(--yuru-line);
+    border-radius: 0.75rem;
+    padding-block: 0.6rem;
+}
+
+.pf-c-form-control:hover {
+    border-color: var(--yuru-line-strong);
+}
+
+.pf-c-form-control:focus,
+.pf-c-form-control:focus-visible {
+    border-color: var(--yuru-accent);
+    outline: 2px solid var(--yuru-accent-soft);
+    outline-offset: 1px;
+}
+
+/* Primary button, the same filled plum as the .btn-primary on her sites */
+.pf-c-button.pf-m-primary {
+    background-color: var(--yuru-accent-fill);
+    color: var(--yuru-on-accent);
+    border-radius: 0.75rem;
+    font-weight: 600;
+    transition: background-color 0.15s ease;
+}
+
+.pf-c-button.pf-m-primary:hover,
+.pf-c-button.pf-m-primary:focus {
+    background-color: var(--yuru-accent-fill-hover);
+}
+
+.pf-c-button.pf-m-secondary,
+.pf-c-button.pf-m-tertiary {
+    border-radius: 0.75rem;
+    border-color: var(--yuru-line-strong);
+    color: var(--yuru-ink);
+}
+
+a,
+.pf-c-login__main-footer-links-item-link {
+    color: var(--yuru-accent-strong);
+}
+
+/* Background image is set on the brand; keep it readable behind the card */
+.pf-c-background-image::before,
+.ak-static-page-background::after {
+    background-color: color-mix(in srgb, var(--yuru-canvas) 55%, transparent);
+}
+
+/* Logo beside the heading.
+ * The flow executor renders the brand logo in its own block (.pf-c-brand, part="branding")
+ * while the title lives in a nested ak-flow-card shadow root, so the two cannot be flexed
+ * together. Hide the standalone logo and draw it as the heading's own icon instead. */
+.pf-c-login__main-header.pf-c-brand {
+    display: none;
+}
+
+.pf-c-login__main-header:not(.pf-c-brand) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.85rem;
+    text-align: start;
+}
+
+.pf-c-login__main-header:not(.pf-c-brand)::before {
+    content: "";
+    flex: none;
+    inline-size: 2.75rem;
+    block-size: 2.75rem;
+    border-radius: 9999px;
+    background: url("https://funami.tech/assets/img/yuifunami.png") center / contain no-repeat;
+}
+
+.pf-c-login__main-header h1,
+.pf-c-login__main-header .pf-c-title {
+    margin: 0;
+    text-align: start;
+}
