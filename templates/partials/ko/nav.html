@@ -7,37 +7,37 @@
 
         <div class="relative hidden md:block" data-dropdown>
             <button type="button" class="nav-link" aria-expanded="false" aria-haspopup="true">
-                Services
+                서비스
                 <svg class="size-3.5 transition-transform duration-200" aria-hidden="true"><use href="#i-chevron-down"/></svg>
             </button>
             <div class="dropdown-panel" hidden>
                 <a class="menu-item" href="https://chat.funami.tech"><svg class="size-4" aria-hidden="true"><use href="#i-matrix"/></svg>YuruChat<span class="ms-auto text-xs text-faint">Matrix</span></a>
-                <a class="menu-item" href="https://toot.funami.tech"><svg class="size-4" aria-hidden="true"><use href="#i-mastodon"/></svg>YuruToot<span class="ms-auto text-xs text-faint">Mastodon</span></a>
+                <a class="menu-item" href="https://toot.funami.tech"><svg class="size-4" aria-hidden="true"><use href="#i-mastodon"/></svg>YuruToot<span class="ms-auto text-xs text-faint">마스토돈</span></a>
                 <a class="menu-item" href="https://lemmy.funami.tech"><svg class="size-4" aria-hidden="true"><use href="#i-lemmy"/></svg>YuruLemmy<span class="ms-auto text-xs text-faint">Lemmy</span></a>
                 <div class="my-1.5 border-t border-line"></div>
-                <a class="menu-item" href="https://mc.funami.tech"><svg class="size-4" aria-hidden="true"><use href="#i-box"/></svg>YuruMC<span class="ms-auto text-xs text-faint">Minecraft</span></a>
-                <a class="menu-item" href="https://mirror.funami.tech"><svg class="size-4" aria-hidden="true"><use href="#i-hard-drive"/></svg>YuruMirror<span class="ms-auto text-xs text-faint">Linux mirrors</span></a>
+                <a class="menu-item" href="https://mc.funami.tech"><svg class="size-4" aria-hidden="true"><use href="#i-box"/></svg>YuruMC<span class="ms-auto text-xs text-faint">마인크래프트</span></a>
+                <a class="menu-item" href="https://mirror.funami.tech"><svg class="size-4" aria-hidden="true"><use href="#i-hard-drive"/></svg>YuruMirror<span class="ms-auto text-xs text-faint">리눅스 미러</span></a>
                 <div class="my-1.5 border-t border-line"></div>
-                <a class="menu-item" href="https://github.com/funamitech"><svg class="size-4" aria-hidden="true"><use href="#i-github"/></svg>funamitech on GitHub<svg class="ms-auto size-3 text-faint" aria-hidden="true"><use href="#i-external-link"/></svg></a>
+                <a class="menu-item" href="https://github.com/funamitech"><svg class="size-4" aria-hidden="true"><use href="#i-github"/></svg>GitHub의 funamitech<svg class="ms-auto size-3 text-faint" aria-hidden="true"><use href="#i-external-link"/></svg></a>
             </div>
         </div>
 
         <a class="nav-link hidden md:inline-flex" href="/ko/#support">
             <svg class="size-3.5 text-accent" aria-hidden="true"><use href="#i-heart"/></svg>
-            Donate
+            후원
         </a>
-        <a class="icon-btn hidden md:inline-flex" href="https://github.com/funamitech/yuruverse" aria-label="Source on GitHub">
+        <a class="icon-btn hidden md:inline-flex" href="https://github.com/funamitech/yuruverse" aria-label="GitHub 소스 코드">
             <svg class="size-4" aria-hidden="true"><use href="#i-github"/></svg>
         </a>
         <a class="lang-switch" href="{{path}}?lang=en" hreflang="en">
             <svg class="size-3.5" aria-hidden="true"><use href="#i-globe"/></svg>
             <span lang="en">English</span><span class="sr-only">: 이 페이지를 영어로 보기</span>
         </a>
-        <button type="button" class="icon-btn" id="theme-toggle" aria-label="Toggle color theme" title="We love light mode here.">
+        <button type="button" class="icon-btn" id="theme-toggle" aria-label="테마 전환" title="여기선 라이트 모드를 좋아해요.">
             <svg class="size-4 theme-icon-light" aria-hidden="true"><use href="#i-moon"/></svg>
             <svg class="size-4 theme-icon-dark" aria-hidden="true"><use href="#i-sun"/></svg>
         </button>
-        <button type="button" class="icon-btn md:hidden" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Menu">
+        <button type="button" class="icon-btn md:hidden" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="메뉴">
             <svg class="size-4" data-icon-open aria-hidden="true"><use href="#i-menu"/></svg>
             <svg class="size-4" data-icon-close hidden aria-hidden="true"><use href="#i-x"/></svg>
         </button>
@@ -45,16 +45,16 @@
 
     <div id="mobile-menu" class="border-t border-line px-4 pb-4 pt-2 md:hidden" hidden>
         <nav class="grid gap-0.5" aria-label="Mobile">
-            <a class="menu-item" href="/ko/#support"><svg class="size-4 text-accent" aria-hidden="true"><use href="#i-heart"/></svg>Donate</a>
+            <a class="menu-item" href="/ko/#support"><svg class="size-4 text-accent" aria-hidden="true"><use href="#i-heart"/></svg>후원</a>
             <div class="my-1.5 border-t border-line"></div>
             <a class="menu-item" href="https://chat.funami.tech"><svg class="size-4" aria-hidden="true"><use href="#i-matrix"/></svg>YuruChat<span class="ms-auto text-xs text-faint">Matrix</span></a>
-            <a class="menu-item" href="https://toot.funami.tech"><svg class="size-4" aria-hidden="true"><use href="#i-mastodon"/></svg>YuruToot<span class="ms-auto text-xs text-faint">Mastodon</span></a>
+            <a class="menu-item" href="https://toot.funami.tech"><svg class="size-4" aria-hidden="true"><use href="#i-mastodon"/></svg>YuruToot<span class="ms-auto text-xs text-faint">마스토돈</span></a>
             <a class="menu-item" href="https://lemmy.funami.tech"><svg class="size-4" aria-hidden="true"><use href="#i-lemmy"/></svg>YuruLemmy<span class="ms-auto text-xs text-faint">Lemmy</span></a>
-            <a class="menu-item" href="https://mc.funami.tech"><svg class="size-4" aria-hidden="true"><use href="#i-box"/></svg>YuruMC<span class="ms-auto text-xs text-faint">Minecraft</span></a>
-            <a class="menu-item" href="https://mirror.funami.tech"><svg class="size-4" aria-hidden="true"><use href="#i-hard-drive"/></svg>YuruMirror<span class="ms-auto text-xs text-faint">Linux mirrors</span></a>
+            <a class="menu-item" href="https://mc.funami.tech"><svg class="size-4" aria-hidden="true"><use href="#i-box"/></svg>YuruMC<span class="ms-auto text-xs text-faint">마인크래프트</span></a>
+            <a class="menu-item" href="https://mirror.funami.tech"><svg class="size-4" aria-hidden="true"><use href="#i-hard-drive"/></svg>YuruMirror<span class="ms-auto text-xs text-faint">리눅스 미러</span></a>
             <div class="my-1.5 border-t border-line"></div>
-            <a class="menu-item" href="https://github.com/funamitech/yuruverse"><svg class="size-4" aria-hidden="true"><use href="#i-github"/></svg>Source on GitHub</a>
-            <a class="menu-item" href="https://github.com/funamitech"><svg class="size-4" aria-hidden="true"><use href="#i-code"/></svg>funamitech on GitHub<svg class="ms-auto size-3 text-faint" aria-hidden="true"><use href="#i-external-link"/></svg></a>
+            <a class="menu-item" href="https://github.com/funamitech/yuruverse"><svg class="size-4" aria-hidden="true"><use href="#i-github"/></svg>GitHub 소스 코드</a>
+            <a class="menu-item" href="https://github.com/funamitech"><svg class="size-4" aria-hidden="true"><use href="#i-code"/></svg>GitHub의 funamitech<svg class="ms-auto size-3 text-faint" aria-hidden="true"><use href="#i-external-link"/></svg></a>
         </nav>
     </div>
 </header>
