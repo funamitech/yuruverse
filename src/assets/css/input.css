@@ -271,3 +271,13 @@
     translate: 0 -4px;
   }
 }
+
+/* Korean pages: no bold or italic emphasis inside running text (Noa: "no bold, italic for Korean!
+   No sane Korean uses 'em!"). Headings, card titles, labels and numbers keep their weight. Unlayered,
+   so it also beats the `italic` / `font-*` utilities. */
+html:lang(ko) :is(p, li, dd, figcaption, blockquote, td) :is(strong, b) {
+  font-weight: inherit;
+}
+html:lang(ko) :is(em, i, cite, .italic) {
+  font-style: normal;
+}
