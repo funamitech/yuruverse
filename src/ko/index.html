@@ -22,7 +22,7 @@
 <link rel="alternate" hreflang="x-default" href="https://funami.tech/">
 <link rel="icon" type="image/png" sizes="300x298" href="/assets/img/yuifunami-300px.png">
 <link rel="apple-touch-icon" href="/assets/img/yuifunami-300px.png">
-<link rel="preload" href="/assets/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/tailwind.css">
 <script>try { var q = new URLSearchParams(location.search).get('theme'); if (q === 'dark' || q === 'light') { document.documentElement.dataset.theme = q; } else if (!document.documentElement.dataset.theme) { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } } catch (e) { /* no-op */ }</script>
 <script src="/assets/js/site.js" defer></script>
@@ -192,7 +192,7 @@
                             </div>
                         </div>
                         <p class="mt-3 text-sm/relaxed">
-                            유루유리 글리치, glitch-soc 포크(Glitch-YRYR) 기반의 마스토돈이에요. 누구나 안전하게
+                            유루유리 글리치, glitch-soc 포크(<span class="whitespace-nowrap">Glitch-YRYR</span>) 기반의 마스토돈이에요. 누구나 안전하게
                             쓸 수 있고, 혐오와 차별은 사절이에요. 가입은 열려 있지만 모든 계정은 관리자가 직접
                             승인해요. 핸들: <code class="font-mono text-[13px] text-ink">@you@funami.tech</code>.
                         </p>
@@ -247,7 +247,7 @@
                         <p class="mt-3 text-sm/relaxed">
                             Arch Linux, Artix, CachyOS, EndeavourOS, Fyra Labs 패키지 미러예요. 유일하게 집이
                             아닌 서울 오라클 클라우드에서 돌아가는 서비스, 4 Gbps.
-                            <code class="font-mono text-[13px] text-ink">pacman -Syu</code>가 쌩쌩 돌아가요.
+                            <code class="whitespace-nowrap font-mono text-[13px] text-ink">pacman -Syu</code>가 쌩쌩 돌아가요.
                         </p>
                         <p class="chip mt-auto pt-1 self-start">nginx · Oracle Cloud</p>
                     </a>
@@ -264,7 +264,7 @@
                         </div>
                         <p class="mt-3 text-sm/relaxed">
                             저희 소스 코드예요. 이 사이트, YuruMC 페이지, YuruMirror 사이트는 GPL-3.0이고,
-                            마스토돈 포크인 유루유리 글리치는 AGPL-3.0이에요.
+                            마스토돈 포크인 유루유리 글리치는 <span class="whitespace-nowrap">AGPL-3.0</span>이에요.
                         </p>
                         <p class="chip mt-auto pt-1 self-start">GPL-3.0 · AGPL-3.0</p>
                     </a>
@@ -333,7 +333,7 @@
                     </div>
                     <div class="flex flex-none flex-col items-stretch gap-4 text-center sm:items-center md:w-[18rem]">
                         <a href="https://github.com/sponsors/NoaHimesaka1873" class="btn-primary w-full whitespace-nowrap px-6 py-3 text-base">
-                            <svg class="size-5" aria-hidden="true"><use href="#i-github"/></svg>
+                            <svg class="size-5 flex-none" aria-hidden="true"><use href="#i-github"/></svg>
                             GitHub에서 후원하기 ♥
                         </a>
                         <p class="text-xs/relaxed text-faint">
@@ -382,11 +382,11 @@
                     <h3 class="mb-3 text-xs font-semibold uppercase tracking-wider text-faint">프로젝트</h3>
                     <ul class="space-y-2">
                         <li><a class="footer-link" href="https://nginx.org/">nginx</a></li>
-                        <li><a class="footer-link" href="https://github.com/funamitech/yuruverse">사이트 소스 (GPL-3.0)</a></li>
+                        <li><a class="footer-link" href="https://github.com/funamitech/yuruverse">사이트 소스 <span class="whitespace-nowrap">(GPL-3.0)</span></a></li>
                         <li><a class="footer-link" href="https://github.com/sponsors/NoaHimesaka1873">후원</a></li>
                     </ul>
                 </div>
-                <div>
+                <div class="col-span-2 sm:col-span-1">
                     <h3 class="mb-3 text-xs font-semibold uppercase tracking-wider text-faint">YuruVerse</h3>
                     <ul class="space-y-2 text-faint">
                         <li class="flex items-start gap-2"><svg class="mt-1 size-3.5 flex-none" aria-hidden="true"><use href="#i-map-pin"/></svg>대한민국 경기도</li>
