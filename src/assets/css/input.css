@@ -13,10 +13,10 @@
 /* ----------------------------------------------------------------- tokens */
 
 @theme {
-  --font-sans: "InterVariable", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "InterVariable", "Inter", "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", ui-sans-serif, system-ui, sans-serif;
   --font-mono: ui-monospace, "JetBrains Mono", "Cascadia Code", "SF Mono", Menlo, Consolas, monospace;
 
-  /* Brand plum ramp — from Yui's uniform (#7f6f79) */
+  /* Brand plum ramp: from Yui's uniform (#7f6f79) */
   --color-plum-50: #faf8f9;
   --color-plum-100: #f3eff2;
   --color-plum-200: #e8e1e6;
@@ -111,6 +111,13 @@
     @apply flex min-h-svh flex-col bg-canvas font-sans text-[15px]/relaxed text-fg antialiased;
   }
 
+  /* Korean: Inter has no Hangul, so the stack above falls through to a
+     Hangul face; keep-all stops line breaks inside a word (eojeol). */
+  :lang(ko) {
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+
   ::selection {
     background: color-mix(in oklab, var(--color-accent) 28%, transparent);
   }
@@ -133,6 +140,12 @@
   /* Navigation */
   .nav-link {
     @apply inline-flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-sm font-medium text-fg transition-colors hover:bg-inset hover:text-ink;
+  }
+
+  /* Language switch: a nav-link that stays visible at every width, so it
+     works on phones without opening the (JS-only) mobile menu. */
+  .lang-switch {
+    @apply inline-flex h-8 flex-none items-center gap-1.5 whitespace-nowrap rounded-lg px-2 text-sm font-medium text-fg transition-colors hover:bg-inset hover:text-ink sm:px-3;
   }
 
   .icon-btn {
@@ -209,7 +222,7 @@
     @apply rounded-2xl border border-line bg-surface;
   }
 
-  /* Clickable cards (service grid) — same hover as YuruMirror's .mirror-card */
+  /* Clickable cards (service grid): same hover as YuruMirror's .mirror-card */
   .service-card {
     @apply transition hover:-translate-y-0.5 hover:border-line-strong hover:shadow-md hover:shadow-plum-950/5;
   }

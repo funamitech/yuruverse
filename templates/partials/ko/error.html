@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
-    <!-- @include partials/head.html title="{{code}} {{title}} | YuruVerse" description="YuruVerse error page. Something went wrong, or you're somewhere you shouldn't be." image="{{image}}" path="{{path}}" locale="en_US" altlocale="ko_KR" -->
+    <!-- @include partials/head.html title="{{code}} {{title}} | YuruVerse" description="YuruVerse error page. Something went wrong, or you're somewhere you shouldn't be." image="{{image}}" path="{{path}}" locale="ko_KR" altlocale="en_US" -->
     <meta name="robots" content="noindex">
 </head>
 
 <body>
-    <!-- @include partials/nav.html path="{{path}}" -->
+    <!-- @include partials/ko/nav.html path="{{path}}" -->
 
     <main class="relative flex grow items-center justify-center overflow-hidden px-4 py-16 sm:px-6">
         <div class="glow top-10 left-1/2 size-[26rem] -translate-x-1/2 {{glow}}" aria-hidden="true"></div>
@@ -20,10 +20,10 @@
             <p class="mt-2 text-xs text-faint">{{caption}}</p>
             <p class="mt-6 text-sm/relaxed">{{message}}</p>
             <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">
-                <a href="/" class="btn-primary whitespace-nowrap">
+                <a href="/ko/" class="btn-primary whitespace-nowrap">
                     <svg class="size-4" aria-hidden="true"><use href="#i-house"/></svg> Sorry, Yui, take me home
                 </a>
-                <a href="/#services" class="btn-ghost whitespace-nowrap">
+                <a href="/ko/#services" class="btn-ghost whitespace-nowrap">
                     <svg class="size-4" aria-hidden="true"><use href="#i-globe"/></svg>
                     Show me the services anyway
                 </a>
@@ -31,7 +31,7 @@
         </div>
     </main>
 
-    <!-- @include partials/footer.html -->
+    <!-- @include partials/ko/footer.html -->
 </body>
 
 </html>
